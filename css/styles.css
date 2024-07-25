@@ -87,4 +87,24 @@ nav a:active {
 
 /* Hero */
 .hero__image {
+  height: 70vh;
+  width: 100%;
+}
+
+.hero__content {
+  position: absolute;
+  top: 31.5rem;
+  left: 10vw;
+}
+
+.hero__heading {
+  color: var(--color--white);
+  font-weight: 500;
+  font-family: "poppins";
+}
+
+.btn--hero {
+  background-color: var(--color--button--yellow);
+  color: var(--color--white);
+  margin-top: 8vh;
 }

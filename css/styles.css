@@ -1,0 +1,74 @@
+:root {
+  --color--heading: #2864af;
+  --color--button--yellow: #f0a205;
+  --color--white: #fff;
+  --color--black: #000018;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "poppins";
+  font-size: 2rem;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Nav Bar */
+section.navbar {
+  display: flex;
+  flex-direction: row;
+  margin: 1rem;
+  border: var(--color--black) solid 1px;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav-icon {
+  width: 30%;
+}
+
+.nav-icon img {
+  height: 10rem;
+  width: auto;
+}
+
+nav {
+  background: var(--color--white);
+  padding: 2rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  gap: 2rem;
+}
+
+nav a:link,
+nav a:visited {
+  color: var(--color--black);
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+}
+
+nav a:hover,
+nav a:active {
+  color: var(--color--white);
+  background-color: var(--color--black);
+}
+
+/* Hero */

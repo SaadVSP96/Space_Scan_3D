@@ -72,7 +72,14 @@ nav a:active {
   background-color: var(--color--black);
 }
 
-/* Buttons */
+/* Span */
+span.straight-line {
+  display: block;
+  width: 90vw; /*or whatever width you want the effect of <hr>*/
+  border-top: 1px solid var(--color--black);
+  margin: 6rem auto;
+}
+
 /* Buttons */
 .btn {
   border-radius: 1rem;
@@ -83,6 +90,19 @@ nav a:active {
   padding: 2rem 4rem;
   text-align: center;
   white-space: nowrap;
+}
+
+.btn--hero {
+  background-color: var(--color--button--yellow);
+  color: var(--color--white);
+  margin-top: 8vh;
+}
+
+.btn--started {
+  display: block;
+  background-color: var(--color--heading);
+  color: var(--color--white);
+  margin: 10rem auto;
 }
 
 /* Hero */
@@ -100,11 +120,39 @@ nav a:active {
 .hero__heading {
   color: var(--color--white);
   font-weight: 500;
-  font-family: "poppins";
 }
 
-.btn--hero {
-  background-color: var(--color--button--yellow);
-  color: var(--color--white);
-  margin-top: 8vh;
+/* Services */
+
+.services {
+  padding: 7rem 5rem;
+}
+
+.services__heading {
+  color: var(--color--heading);
+  text-decoration: underline;
+  text-align: center;
+  font-weight: 400;
+}
+
+.services-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.services__desc {
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--color--black);
+}
+
+.media-element {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.media-element .media-element__img {
+  width: 100%;
+  height: auto;
 }

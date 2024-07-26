@@ -31,9 +31,10 @@ section.navbar {
   display: flex;
   flex-direction: row;
   margin: 1rem;
-  border: var(--color--black) solid 1px;
+  /* border: var(--color--black) solid 1px; */
   justify-content: space-between;
   align-items: center;
+  padding: 1rem 5rem;
 }
 .nav-icon {
   width: 30%;
@@ -125,7 +126,7 @@ span.straight-line {
 /* Services */
 
 .services {
-  padding: 7rem 5rem;
+  padding: 5rem 5rem;
 }
 
 .services__heading {
@@ -138,6 +139,7 @@ span.straight-line {
 .services-container {
   display: flex;
   flex-direction: row;
+  justify-content: center;
 }
 
 .services__desc {
@@ -152,7 +154,48 @@ span.straight-line {
   align-items: center;
 }
 
-.media-element .media-element__img {
+.media-element__img {
   width: 100%;
   height: auto;
+}
+
+.media-element__desc {
+  font-weight: 500;
+  font-size: 3rem;
+}
+
+/* Virtual Tours */
+
+.virtual-tours {
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.virtual-tours__heading {
+  color: var(--color--black);
+  font-weight: 500;
+  font-size: 3rem;
+  /* align-self: center; */
+  width: 80%;
+}
+
+.virtual-tours__article {
+  width: 80%;
+}
+
+.article__heading {
+  font-size: 2.5rem;
+  font-weight: 400;
+}
+
+.article__paragraph {
+  padding: 2rem 0;
+  font-size: 1.6rem;
+}
+
+.article__image {
+  display: block;
+  margin: 0 auto;
 }

@@ -106,6 +106,11 @@ span.straight-line {
   margin: 10rem auto;
 }
 
+.btn--contact.btn--started {
+  display: inline-block;
+  margin: 0;
+}
+
 /* Hero */
 .hero__image {
   height: 70vh;
@@ -165,15 +170,19 @@ span.straight-line {
 }
 
 /* Virtual Tours */
+/* and */
+/* Floor Plans */
 
-.virtual-tours {
+.virtual-tours,
+.floor-plans {
   padding: 5rem 5rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.virtual-tours__heading {
+.virtual-tours__heading,
+.floor-plans__heading {
   color: var(--color--black);
   font-weight: 500;
   font-size: 3rem;
@@ -181,7 +190,8 @@ span.straight-line {
   width: 80%;
 }
 
-.virtual-tours__article {
+.virtual-tours__article,
+.floor-plans__article {
   width: 80%;
 }
 
@@ -198,4 +208,42 @@ span.straight-line {
 .article__image {
   display: block;
   margin: 0 auto;
+  width: 100%;
+}
+
+/* Work Together */
+.work-together {
+  background: var(--color--button--yellow);
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hero__heading.work-together__heading {
+  font-size: 3.4rem;
+  font-weight: 500;
+}
+
+.article__paragraph.work-together__paragraph {
+  color: var(--color--white);
+  width: 50%;
+}
+
+/* Contact Info */
+.contact-info {
+  padding: 5rem 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.hero__heading.contact-info__heading {
+  font-size: 3.4rem;
+  font-weight: 500;
+  color: var(--color--black);
+}
+
+.article__paragraph.contact-info__paragraph {
+  color: var(--color--black);
 }

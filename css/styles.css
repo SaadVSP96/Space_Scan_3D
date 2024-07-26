@@ -170,10 +170,11 @@ span.straight-line {
 }
 
 /* Virtual Tours */
-/* and */
+/* Photography Services */
 /* Floor Plans */
 
 .virtual-tours,
+.photo-service,
 .floor-plans {
   padding: 5rem 5rem;
   display: flex;
@@ -182,6 +183,7 @@ span.straight-line {
 }
 
 .virtual-tours__heading,
+.photo-service__heading,
 .floor-plans__heading {
   color: var(--color--black);
   font-weight: 500;
@@ -191,6 +193,7 @@ span.straight-line {
 }
 
 .virtual-tours__article,
+.photo-service__article,
 .floor-plans__article {
   width: 80%;
 }

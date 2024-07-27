@@ -133,6 +133,25 @@ span.straight-line {
 
 /* Hero */
 
+.hero {
+  height: 65vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 15rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url("/images/hero_image.jpg");
+}
+
+.hero__heading {
+  color: var(--color--white);
+  font-weight: 500;
+  font-size: 3rem;
+}
+
 /* Services */
 .services {
   padding: 5rem 5rem;

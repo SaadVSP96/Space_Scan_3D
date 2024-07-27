@@ -160,7 +160,7 @@ span.straight-line {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 15rem;
+  padding-left: 20vw;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -263,6 +263,48 @@ span.straight-line {
   display: block;
   margin: 0 auto;
   width: 100%;
+}
+
+/* Photgraphy Services > Images Slider */
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  margin: auto;
+}
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/* Images */
+.mySlides > img {
+  display: block;
+  width: 90%;
+  height: auto;
+  margin: 0 auto;
+}
+
+/* Next & previous buttons */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 45%;
+  width: auto;
+  padding: 16px;
+  color: var(--color--black);
+  font-weight: bold;
+  font-size: 3rem;
+  transition: 0.6s ease;
+  user-select: none;
+}
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+}
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 /* Work Together */

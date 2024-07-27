@@ -137,6 +137,7 @@ span.straight-line {
   background-color: var(--color--button--yellow);
   color: var(--color--white);
   margin-top: 8vh;
+  text-wrap: wrap;
 }
 
 .btn--started {
@@ -211,6 +212,12 @@ span.straight-line {
 .media-element__desc {
   font-weight: 500;
   font-size: 3rem;
+}
+
+@media screen and (max-width: 768px) {
+  .services-container {
+    flex-wrap: wrap;
+  }
 }
 
 /* Virtual Tours */

@@ -26,51 +26,71 @@ a {
   text-decoration: none;
 }
 
+/* Icons */
+.icon {
+  width: 40px;
+  height: 40px;
+}
+
+.icon--black {
+  fill: var(--color--black);
+}
+
+/* Lists */
+
+.list {
+  list-style: none;
+  padding-left: 0;
+}
+
 /* Nav Bar */
-section.navbar {
+
+.nav {
   display: flex;
-  flex-direction: row;
-  margin: 1rem;
-  /* border: var(--color--black) solid 1px; */
   justify-content: space-between;
-  align-items: center;
-  padding: 1rem 5rem;
-}
-.nav-icon {
-  width: 30%;
+  padding: 5rem 5rem;
+  flex-wrap: wrap;
 }
 
-.nav-icon img {
-  height: 10rem;
-  width: auto;
+.nav__brand {
+  /* transform: translate(3rem, 3rem); */
+  width: 300px;
+  padding-bottom: 3rem;
 }
 
-nav {
-  background: var(--color--white);
-  padding: 2rem;
+.nav__brand img {
+  width: 100%;
 }
 
-nav ul {
-  display: flex;
-  justify-content: end;
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  gap: 2rem;
+.nav__toggler {
+  opacity: 0.5;
 }
 
-nav a:link,
-nav a:visited {
+.nav__list {
+  width: 100%;
+}
+
+.nav__item {
+  padding: 0.5rem 2rem;
+}
+
+.nav__item > a {
   color: var(--color--black);
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
+  transition: all 0.3s;
 }
 
-nav a:hover,
-nav a:active {
+.nav__item > a:hover {
   color: var(--color--white);
-  background-color: var(--color--black);
+  background: var(--color--black);
+}
+
+/* Collapsibles */
+
+.collapsible__content {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  transition: all 0.3s;
 }
 
 /* Span */
@@ -112,24 +132,8 @@ span.straight-line {
 }
 
 /* Hero */
-.hero__image {
-  height: 70vh;
-  width: 100%;
-}
-
-.hero__content {
-  position: absolute;
-  top: 31.5rem;
-  left: 10vw;
-}
-
-.hero__heading {
-  color: var(--color--white);
-  font-weight: 500;
-}
 
 /* Services */
-
 .services {
   padding: 5rem 5rem;
 }
@@ -143,6 +147,7 @@ span.straight-line {
 
 .services-container {
   display: flex;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: center;
 }

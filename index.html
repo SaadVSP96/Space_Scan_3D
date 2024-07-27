@@ -14,22 +14,21 @@
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <section class="navbar">
-      <div class="nav-icon">
-        <img src="images/SpaceScan3D-Logo.png" alt="Space Scan 3D logo" />
-      </div>
-      <nav>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Virtual Tours</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Contact Us</a></li>
-        </ul>
-      </nav>
-    </section>
+    <nav class="nav collapsible">
+      <a class="nav__brand" href="/">
+        <img src="images/SpaceScan3D-Logo.png" alt="space scan logo" />
+      </a>
+      <svg class="icon icon--black nav__toggler">
+        <use xlink:href="images/sprite.svg#menu"></use>
+      </svg>
+      <ul class="list nav__list collapsible__content hidden">
+        <li class="nav__item"><a href="#">Home</a></li>
+        <li class="nav__item"><a href="#">Virtual Tours</a></li>
+        <li class="nav__item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
 
     <section class="hero">
-      <img src="images/hero_image.jpg" alt="hero image" class="hero__image" />
       <div class="hero__content">
         <h1 class="hero__heading">
           Premiere 3D Virtual Tour service provider for the North Bay
@@ -118,7 +117,7 @@
           captured and saved forever, for whenever life throws you a curveball.
         </p>
         <img
-          src="images/FrontWalk-1-ColorCorrected.jpg"
+          src="images/25-Lex_19.jpg"
           alt="a nice house"
           class="article__image"
         />
@@ -140,7 +139,7 @@
         </p>
         <!-- Insert Image Conveyor Belt here -->
         <img
-          src="images/FrontWalk-1-ColorCorrected.jpg"
+          src="images/25-Lex_3.jpg"
           alt="a nice house"
           class="article__image"
         />
@@ -181,5 +180,6 @@
         Info@SpaceScan3D.com
       </p>
     </section>
+    <script src="js/main.js"></script>
   </body>
 </html>
